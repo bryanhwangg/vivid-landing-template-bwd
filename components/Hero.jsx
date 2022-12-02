@@ -21,10 +21,10 @@ export const Hero = () => {
 
   return (
     <section className="relative overflow-hidden bg-gray-50 dark:bg-gray-900">
-      <div className="absolute inset-0 z-10 backdrop-blur-[200px]" />
+      <div className="md:text-left lg:text-left sm:text-center absolute inset-0 z-10 backdrop-blur-[200px]" />
       <div className="md:-left-[28rem] -left-40 -top-40 md:-top-[28rem] bg-neon-pink absolute opacity-60 dark:opacity-30 rounded-full w-96 h-96 md:w-[48rem] md:h-[48rem]" />
       <div className="md:-right-[28rem] -right-40 -bottom-40 md:-bottom-[28rem] bg-neon-blue absolute opacity-60 dark:opacity-30 rounded-full w-96 h-96 md:w-[48rem] md:h-[48rem]" />
-      <div className="flex flex-row relative z-20 px-12 py-24 mx-auto max-w-7xl items-center justify-center min-h-screen 2xl:min-h-[1000px] h-fit">
+      <div className="flex md:flex-row lg:flex-row sm:flex-col relative z-20 px-12 py-24 mx-auto max-w-7xl items-center justify-center min-h-screen 2xl:min-h-[1000px] h-fit gap-10">
         <div
           className="absolute inset-0 translate-y-32 pointer-events-none dark:invert dark:brightness-90"
           aria-hidden="true"
@@ -50,18 +50,18 @@ export const Hero = () => {
           <p
             data-aos="zoom-y-out"
             data-aos-delay="150"
-            className="text-lg md:text-xl text-black"
+            className="text-lg md:text-xl dark:text-white text-black"
           >
             Vivid makes front-end development effortless with our in-browser
             visual editor to modify your code.
           </p>
           <div
-            className="flex flex-col"
+            className="flex flex-col m-5"
             data-aos="zoom-y-out"
             data-aos-delay="300"
           >
             <form
-              className="relative flex flex-row items-center"
+              className="relative flex flex md:flex-row lg:flex-row sm:flex-col items-center gap-2"
               onSubmit={handleSubmit}
             >
               <input
@@ -73,11 +73,11 @@ export const Hero = () => {
                 onChange={(event) => setEmail(event.target.value)}
                 value={email}
                 required
-                className="w-full text-gray-800 placeholder-gray-400 bg-gray-100 border rounded-lg dark:placeholder-gray-600 dark:bg-gray-800 first-line:border-gray-200 dark:border-gray-600 dark:text-gray-100"
+                className="md:w-auto lg:w-auto sm:w-full text-gray-800 placeholder-gray-400 bg-gray-100 border rounded-lg dark:placeholder-gray-600 dark:bg-green-800 first-line:border-gray-200 dark:border-gray-600 dark:text-gray-100 px-2 py-2"
               />
               <label
                 htmlFor="hero-waitlist"
-                className="absolute z-10 text-xs text-gray-600 -top-2 left-4 dark:text-gray-400"
+                className="absolute z-10 text-xs text-gray-600 -top-7 left-4 dark:text-gray-400"
               >
                 Your Email
               </label>
