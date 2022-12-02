@@ -24,7 +24,7 @@ export const Hero = () => {
       <div className="absolute inset-0 z-10 backdrop-blur-[200px]" />
       <div className="md:-left-[28rem] -left-40 -top-40 md:-top-[28rem] bg-neon-pink absolute opacity-60 dark:opacity-30 rounded-full w-96 h-96 md:w-[48rem] md:h-[48rem]" />
       <div className="md:-right-[28rem] -right-40 -bottom-40 md:-bottom-[28rem] bg-neon-blue absolute opacity-60 dark:opacity-30 rounded-full w-96 h-96 md:w-[48rem] md:h-[48rem]" />
-      <div className="relative z-20 px-12 py-24 mx-auto max-w-7xl items-center justify-center min-h-screen 2xl:min-h-[1000px] h-fit">
+      <div className="flex flex-row relative z-20 px-12 py-24 mx-auto max-w-7xl items-center justify-center min-h-screen 2xl:min-h-[1000px] h-fit">
         <div
           className="absolute inset-0 translate-y-32 pointer-events-none dark:invert dark:brightness-90"
           aria-hidden="true"
